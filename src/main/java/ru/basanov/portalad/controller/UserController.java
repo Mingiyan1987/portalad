@@ -35,6 +35,7 @@ public class UserController {
         for (User us: users) {
             listUser.add((String) parser.parseExpression("'login'").getValue(us));
         }
+        model.addAttribute("listUser", listUser);
         return "list";
     }
 
