@@ -2,6 +2,7 @@ package ru.basanov.portalad;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import ru.basanov.portalad.controller.UserController;
 
 @SpringBootApplication
 public class PortaladApplication {

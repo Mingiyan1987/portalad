@@ -16,10 +16,8 @@
             </tr>
         </thead>
         <tbody>
-            <tr th:each="user,iter : ${users}">
-                <th scope="row">1</th>
-                <td th:utext="${user.login}">...</td>
-                <td th:utext="${user.password}">...</td>
+            <tr th:each="us: ${$listUser}">
+                <td th:text="${}"/>
             </tr>
         </tbody>
     </table>
