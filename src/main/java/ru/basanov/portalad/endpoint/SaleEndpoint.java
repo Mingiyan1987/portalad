@@ -20,7 +20,7 @@ public class SaleEndpoint {
     private final static Logger LOGGER = Logger.getLogger(SaleEndpoint.class.getSimpleName());
 
     @NotNull
-    public final static String LOCATION_URI = "/soap/task";
+    public final static String LOCATION_URI = "/soap/sale";
 
     @NotNull
     public final static String PORT_TYPE_NAME = "SaleEndpointPort";
@@ -35,12 +35,13 @@ public class SaleEndpoint {
         this.saleService = saleService;
     }
 
-    @PayloadRoot(localPart = "saleRequest", namespace = NAMESPACE)
+    @PayloadRoot(localPart = "saleResponse", namespace = NAMESPACE)
     @ResponsePayload
-    public SaleResponse saleResponse (@RequestPayload SaleReqeust reqeust) throws DatatypeConfigurationException {
-        SaleResponse response = new SaleResponse();
-        response.setName("Футбол");
-        return response;
+    public SaleResponse getSale (@RequestPayload SaleReqeust reqeust) throws DatatypeConfigurationException {
+        SaleResponse saleResponse = new SaleResponse();
+        saleResponse.setName("Теннис");
+        return saleResponse;
     }
+
 
 }
