@@ -1,0 +1,21 @@
+<xs:schema
+		targetNamespace="http://basanov.ru/portalad/soap/sale"
+		elementFormDefault="qualified" xmlns:tns="http://basanov.ru/portalad/soap/sale" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="getSaleReqeust" type="tns:saleReqeust"/>
+	<xs:element name="getSaleResponse" type="tns:saleResponse"/>
+	<xs:complexType name="saleReqeust">
+		<xs:sequence>
+			<xs:element name="id" type="xs:string"/>
+			<xs:element name="name" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="saleResponse">
+		<xs:sequence>
+			<xs:element name="id" type="xs:string"/>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="date" type="xs:date"/>
+			<xs:element name="count" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>
