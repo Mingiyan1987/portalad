@@ -14,7 +14,6 @@ public class SaleService {
 
     private Map<String, Sale> sales =new LinkedHashMap<>();
 
-
     @PostConstruct
     private void init() {
         merge(new Sale("Футбол", "12.02.2018", "3000"));
