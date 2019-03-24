@@ -18,7 +18,7 @@ public class MessageController {
     @Autowired
     private SimpleMessageGateway simpleMessageGateway;
 
-    @RequestMapping(value = "/simple", method = RequestMethod.GET, produces = "application/json")
+    @RequestMapping(value = "/simple", method = RequestMethod.GET)
     public ResultDTO send() {
         simpleMessageGateway.fire(MessageBuilder
                 .withPayload(new SimpleMessage())

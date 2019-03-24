@@ -24,7 +24,4 @@ public class SaleService {
     public void merge(final Sale sale) {
         sales.put(sale.getId(), sale);
     }
-
-
-
 }

@@ -10,6 +10,13 @@ public class SimpleMessage {
         return date;
     }
 
+    public SimpleMessage() {
+    }
+
+    public SimpleMessage(Date date) {
+        this.date = date;
+    }
+
     public void setDate(Date date) {
         this.date = date;
     }
