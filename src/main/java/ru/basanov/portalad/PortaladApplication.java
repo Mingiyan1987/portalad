@@ -26,6 +26,7 @@ public class PortaladApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(PortaladApplication.class, args);
+        /*
         RSSFeedParser parser = new RSSFeedParser(
                 "http://www.oracle.com/ocom/groups/public/@ocom/documents/webcontent/195094.xml");
         Feed feed = parser.readFeed();
@@ -34,5 +35,8 @@ public class PortaladApplication {
             System.out.println(message);
 
         }
+        */
+
+
     }
 }

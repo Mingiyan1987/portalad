@@ -15,7 +15,7 @@ import java.util.Optional;
 
 @Repository
 @Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
-public class UserRepository{
+public class UserRepository {
 
     private Map<String, User> users = new LinkedHashMap<>();
 
@@ -36,4 +36,7 @@ public class UserRepository{
         }
     }
 
+    public User findByName(String login) {
+        return users.get(login);
+    }
 }
