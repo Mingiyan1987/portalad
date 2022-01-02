@@ -1,0 +1,6 @@
+<sale:getSaleRequest xmlns:sale="http://basanov.ru/portalad/soap/sale">
+  <sale:request>
+    <sale:id>string</sale:id>
+    <sale:name>string</sale:name>
+  </sale:request>
+</sale:getSaleRequest>
